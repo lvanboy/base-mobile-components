@@ -1,0 +1,117 @@
+.lv-form-item {
+    display: flex;
+    position: relative;
+    padding-left: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.lv-form-item:last-child {
+    border-bottom: none;
+}
+
+.lv-form-item>.lv-form-label {
+    display: block;
+    width: 3.5rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    color: #666;
+}
+
+.lv-form-item>.lv-form-body {
+    flex: 1;
+}
+
+.lv-form-item>.lv-form-body>.lv-input {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    border: none;
+}
+
+.lv-form-item>.lv-form-body>.lv-input-reset {
+    display: none;
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    right: 1rem;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    font-size: .6rem;
+    background: #aaa;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.lv-form-item>.lv-form-body>.lv-input:focus+.lv-input-reset {
+    display: block;
+}
+
+.lv-form-item>.lv-form-body>.lv-input-warning {
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    right: 1rem;
+    font-size: .6rem;
+    border-radius: 50%;
+    color: lightcoral;
+    border: 1px solid lightcoral;
+}
+
+.lv-form-item>.lv-radio {
+    flex: 1;
+    font-size: .8rem;
+    line-height: 2rem;
+}
+
+.lv-form-item>.lv-radio>.lv-radio-icon {
+    margin-right: .5rem;
+    color: #09bb07;
+    visibility: hidden;
+}
+
+.lv-form-item>.lv-radio.checked>.lv-radio-icon {
+    visibility: visible;
+}
+
+.lv-form-item>.lv-radio>.lv-radio-input {
+    position: absolute;
+    left: -999rem;
+}
+
+.lv-form-item>.lv-radio>.lv-radio-input:checked .lv-radio-icon {
+    visibility: visible;
+}
+
+.lv-form-item>.lv-checkbox {
+    flex: 1;
+    font-size: .8rem;
+    line-height: 2rem;
+}
+
+.lv-form-item>.lv-checkbox>.lv-checkbox-icon {
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    margin-right: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0);
+    font-size: .6rem;
+}
+
+.lv-form-item>.lv-checkbox.checked>.lv-checkbox-icon {
+    background: #09bb07;
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.lv-form-item>.lv-checkbox>.lv-checkbox-input {
+    position: absolute;
+    left: -999rem;
+}

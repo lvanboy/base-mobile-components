@@ -1,0 +1,33 @@
+html,body,div,span,
+h1,h2,h3,h4,h5,h6,p,pre,
+a,img,ul,li,form,label,input,
+table,thead,tbody,tfoot,th,tr,td,
+audio,video{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* 
+    浏览器会按着font-family所指定的字体从左到右依次在系统里查找，直到找到操作系统里存在的字体，
+    然后把它作为网页使用的字体。如果找到最后一个都没有找到，就会使用浏览器的默认字体。
+    */
+    font-family: -apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif ;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a{
+    text-decoration:none;
+}
+input{
+    outline:none;
+    background: none;
+}

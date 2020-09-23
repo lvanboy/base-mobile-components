@@ -1,0 +1,42 @@
+.lv-content {
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+}
+
+
+/* 为了在标题栏和导航提不存在时内容区域能够撑满全屏 */
+
+.lv-header~.lv-content {
+    padding-top: 2.3rem;
+}
+
+.lv-navbar~.lv-content {
+    padding-bottom: 2.5rem;
+}
+
+.lv-content .lv-panel-title {
+    height: 1.8rem;
+    line-height: 1.8rem;
+    padding-left: 1rem;
+    color: #aaa;
+    background: #fff;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.lv-content .lv-panel-body {
+    position: relative;
+    margin-bottom: 6rem;
+    padding: .6rem 1rem;
+    background: #fff;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.lv-content .lv-panel-body.no-padding {
+    padding: 0;
+}

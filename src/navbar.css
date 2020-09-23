@@ -1,0 +1,32 @@
+.lv-navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    max-width: 640px;
+    height: 2.5rem;
+    bottom: 0;
+    z-index: 200;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.lv-navbar>.navbar-item {
+    flex: 1;
+    color: #808080;
+}
+
+.lv-navbar>.navbar-item.active {
+    color: #09bb07;
+}
+
+.lv-navbar>.navbar-item>.icon {
+    padding: .3rem 0 .1rem;
+    font-size: 1.1rem;
+}
+
+.lv-navbar>.navbar-item>.name {
+    display: block;
+    font-size: 0.5rem;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading的设计与开发</title>
+    <link rel="stylesheet" href="../src/lv-ui.css">
+</head>
+
+<body>
+    <div class="lv-content">
+        <h1 class="lv-panel-title">页面加载提示组件</h1>
+        <div class="lv-panel-body">
+            <div class="lv-loading">
+                <i class="fa fa-circle-o-notch fa-spin lv-loading-icon"></i>
+                <span class="lv-loading-info">用力加载中...</span>
+            </div>
+            <div class="lv-loading">
+                <i class="fa fa-refresh lv-loading-icon"></i>
+                <span class="lv-loading-info">加载出错，点我重新加载</span>
+            </div>
+        </div>
+        <h1 class="lv-panel-title">单行提示组件</h1>
+        <div class="lv-panel-body">
+            <div class="lv-loading-inline">
+                <span class="lv-loading-info">
+                    <i class="fa fa-circle-o-notch fa-spin lv-loading-icon"></i>
+                    用力加载中
+                </span>
+            </div>
+            <div class="lv-loading-inline">
+                <span class="lv-loading-info">
+                    上拉加载更多
+                    <i class="fa fa-long-arrow-up fa-vibrate-y lv-loading-icon"></i>
+                </span>
+            </div>
+            <div class="lv-loading-inline">
+                <span class="lv-loading-info">
+                    我也是有底线的
+                </span>
+            </div>
+            <div class="lv-loading-inline">
+                <span class="lv-loading-info">.</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

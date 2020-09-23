@@ -1,0 +1,71 @@
+.lv-modal {
+    display: none;
+}
+
+.lv-modal.show {
+    display: block;
+}
+
+.lv-modal .lv-modal-wrap {
+    position: absolute;
+    width: 75%;
+    max-width: 480px;
+    top: 45%;
+    transform: translate3d(0, -50%, 0);
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    border-radius: .4rem;
+    z-index: 301;
+}
+
+.lv-modal .lv-modal-body {
+    padding: 1.8rem .8rem 1.5rem;
+    text-align: center;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    overflow: hidden;
+}
+
+.lv-modal .lv-modal-footer {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.lv-modal .lv-modal-footer .lv-btn {
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    font-size: .8rem;
+}
+
+.lv-modal .lv-modal-footer .lv-btn+.lv-btn {
+    border-left: 1px solid #ddd;
+}
+
+.lv-modal .lv-modal-body.no-padding {
+    padding: 0;
+}
+
+.lv-modal .lv-modal-body .lv-modal-img {
+    display: block;
+    width: 100%;
+    border-radius: .3rem;
+}
+
+.lv-modal .lv-modal-close {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -3rem;
+    width: 1.3rem;
+    line-height: 1.3rem;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    text-align: center;
+    color: #eee;
+    font-size: .8rem;
+    font-weight: 100;
+}

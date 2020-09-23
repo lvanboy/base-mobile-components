@@ -1,0 +1,68 @@
+.lv-menu>.lv-menu-item {
+    display: flex;
+    height: 2.3rem;
+    padding: 0 1rem;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    font-size: .8rem;
+}
+
+.lv-menu>.lv-menu-item>.lv-menu-name {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333;
+}
+
+.lv-menu>.lv-menu-item>.lv-menu-value {
+    max-width: 5rem;
+    height: 1rem;
+    line-height: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #999;
+}
+
+.lv-menu>.lv-menu-item>.lv-menu-icon {
+    margin-left: .3rem;
+    color: #999;
+}
+
+.lv-menu>.lv-menu-item>.lv-switch {
+    position: relative;
+    box-sizing: content-box;
+    width: 2.6rem;
+    height: 1.4rem;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: .75rem;
+    background-color: rgba(0, 0, 0, .1);
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: background-color .3s, border .3s;
+}
+
+.lv-menu>.lv-menu-item>.lv-switch:checked {
+    border-color: #07c160;
+    background-color: #07c160;
+}
+
+.lv-menu>.lv-menu-item>.lv-switch::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: .7rem;
+    background-color: #fff;
+    /* 性能消耗大，不建议大量使用 */
+    box-shadow: 0 0 2px #999;
+    transition: left .3s;
+}
+
+.lv-menu>.lv-menu-item>.lv-switch:checked::after {
+    left: 1.2rem;
+}

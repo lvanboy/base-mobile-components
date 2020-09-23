@@ -1,0 +1,62 @@
+/* 屏幕小于340 */
+
+@media (max-width:340px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+
+/* 屏幕大于410 */
+
+@media (min-width:410px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+
+/* 屏幕在340到410 */
+
+
+/* 媒体查询里的样式生效的原理是样式的覆盖,为了精简代码，可以提出一个区间的样式作为默认样式，在兼容性
+差的情况下，也不会导致样式丢失 */
+
+
+/* @media (min-width:340px) and (max-width:410px){
+
+} */
+
+
+/* rem分段适配 */
+
+html {
+    font-size: 20px;
+    height: 100%;
+}
+
+body {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #f8f8f8;
+    overflow-x: hidden;
+    height: 100%;
+    /*  在 ios 系统上，可以让滚动元素带有弹性，滚动的更顺滑。
+    注意这条样式只是 webkit 内核提供的，只在基于 webkit 内核的浏览器上有效。 */
+    -webkit-overflow-scrolling: touch;
+}
+
+.lv-mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* 在遇到按屏幕比例划分时，px和rem都不够准确，推荐使用百分比和弹性布局，而弹性布局会覆盖百分比布局，
+优先使用弹性布局
+*/

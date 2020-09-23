@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/lv-ui.css">
+    <title>表单元素</title>
+</head>
+
+<body>
+    <div class="lv-content">
+        <h1 class="lv-panel-title">
+            Panel标签
+        </h1>
+        <div class="lv-panel-body">
+            Panel内容区
+        </div>
+
+        <!--基础输入框-->
+        <h1 class="lv-panel-title">基础输入框</h1>
+        <div class="lv-panel-body no-padding">
+            <div class="lv-form-item">
+                <label class="lv-form-label">用户名</label>
+                <div class="lv-form-body">
+                    <input class="lv-input" type="text" placeholder="请输入性名" />
+                </div>
+            </div>
+            <div class="lv-form-item">
+                <label class="lv-form-label">密码</label>
+                <div class="lv-form-body">
+                    <input class="lv-input" type="password" placeholder="请输入密码" />
+                </div>
+            </div>
+            <div class="lv-form-item">
+                <label class="lv-form-label">日期</label>
+                <div class="lv-form-body">
+                    <input class="lv-input" type="date" placeholder="请输入日期" />
+                </div>
+            </div>
+        </div>
+        <h1 class="lv-panel-title ">带有清空功能的输入框</h1>
+        <div class="lv-panel-body no-padding">
+            <div class="lv-form-item">
+                <label class="lv-form-label">手机号</label>
+                <div class="lv-form-body">
+                    <input class="lv-input" type="text" placeholder="请输入手机号" />
+                    <i class="fa fa-close lv-input-reset"></i>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="lv-panel-title ">带有错误提示的输入框</h1>
+        <div class="lv-panel-body no-padding">
+            <div class="lv-form-item">
+                <label class="lv-form-label">邮箱</label>
+                <div class="lv-form-body">
+                    <input class="lv-input" type="text" placeholder="请输入邮箱" />
+                    <i class="fa fa-exclamation lv-input-warning"></i>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="lv-panel-title ">单选</h1>
+        <div class="lv-panel-body no-padding">
+            <div class="lv-form-item">
+                <div class="lv-radio">
+                    <i class="fa fa-check lv-radio-icon"></i>
+                    <span class="lv-radio-desc">单选项1</span>
+                    <input type="radio" class="lv-radio-input">
+                </div>
+            </div>
+            <div class="lv-form-item">
+                <div class="lv-radio checked">
+                    <i class="fa fa-check lv-radio-icon"></i>
+                    <span class="lv-radio-desc">单选项2</span>
+                    <input type="radio" class="lv-radio-input">
+                </div>
+            </div>
+            <div class="lv-form-item">
+                <div class="lv-radio">
+                    <i class="fa fa-check lv-radio-icon"></i>
+                    <span class="lv-radio-desc">单选项3</span>
+                    <input type="radio" class="lv-radio-input">
+                </div>
+            </div>
+        </div>
+
+        <h1 class="lv-panel-title ">多选</h1>
+        <div class="lv-panel-body no-padding">
+            <div class="lv-form-item">
+                <div class="lv-checkbox checked">
+                    <i class="fa fa-check lv-checkbox-icon"></i>
+                    <span class="lv-checkbox-desc">单选项1</span>
+                    <input type="checkbox" class="lv-checkbox-input">
+                </div>
+            </div>
+            <div class="lv-form-item">
+                <div class="lv-checkbox checked">
+                    <i class="fa fa-check lv-checkbox-icon"></i>
+                    <span class="lv-checkbox-desc">单选项2</span>
+                    <input type="checkbox" class="lv-checkbox-input">
+                </div>
+            </div>
+            <div class="lv-form-item">
+                <div class="lv-checkbox">
+                    <i class="fa fa-check lv-checkbox-icon"></i>
+                    <span class="lv-checkbox-desc">单选项3</span>
+                    <input type="checkbox" class="lv-checkbox-input">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

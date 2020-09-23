@@ -1,0 +1,48 @@
+.lv-btn {
+    display: block;
+    position: relative;
+    width: 10rem;
+    margin: 0 auto;
+    padding: .5rem 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: .7rem;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    user-select: none;
+}
+
+.lv-btn.lv-primary {
+    background: #1aad19;
+    color: #fff;
+}
+
+.lv-btn.lv-warning {
+    background: #e64340;
+    color: #fff;
+}
+
+.lv-btn.lv-disabled {
+    background-color: #f7f7f7;
+    color: #999;
+    opacity: .6;
+}
+
+.lv-btn.lv-btn-large {
+    width: 100%;
+    font-size: .9rem;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+}
+
+.lv-btn.lv-btn-small {
+    display: inline-block;
+    width: 3rem;
+    padding: .2rem 0;
+    font-size: .7rem;
+}

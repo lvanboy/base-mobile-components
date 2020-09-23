@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索组件的设计与开发</title>
+    <link rel="stylesheet" href="../src//lv-ui.css">
+</head>
+
+<body>
+    <div class="lv-content">
+        <div class="lv-search">
+            <!--搜索框-->
+            <!--如果 input 的类型是 H5 中的搜索类型，也就是 <input type=“search” />，
+            那么在有些输入法中表单的提交按 钮的文本就可以变成“搜索”，
+            但是这种用法会有问题，同学们下去自己尝试一下，并试着解决一下遇到的问题。-->
+            <form action="#" class="lv-search-form">
+                <div class="lv-search-input-wrap">
+                    <i class="fa fa-search lv-search-icon"></i>
+                    <input class="lv-search-input" type="text" placeholder="搜索" required autocomplete="off" />
+                    <i class="fa fa-close lv-search-clear"></i>
+                </div>
+                <span class="lv-search-cancel">取消</span>
+            </form>
+            <!--搜索建议-->
+            <ul class="lv-search-suggest">
+                <li class="lv-suggest-item"> 手机</li>
+                <li class="lv-suggest-item"> Iphone XS max</li>
+                <li class="lv-suggest-item"> 华为P30</li>
+                <li class="lv-suggest-item"> 小米 MIX3</li>
+                <li class="lv-suggest-item"> 诺基亚1110</li>
+            </ul>
+        </div>
+        <p class="content">内容区域</p>
+    </div>
+</body>
+
+</html>
